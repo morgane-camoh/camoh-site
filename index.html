@@ -8,21 +8,18 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg: #e1e0da;
-      --sand: #d8c5ac;
-      --text: #2b2b2b;
-      --primary: #9c745b;
+      --pearl-ash: #e1e0da;
+      --desert-sand: #d8c5ac;
+      --charcoal-ink: #2b2b2b;
+      --clay-stone: #9c745b;
       --walnut: #573923;
       --terracotta: #944f37;
-      --white: #f8f6f2;
-      --shadow: 0 18px 40px rgba(43, 43, 43, 0.08);
-      --radius: 22px;
 
-      --momenceColorBackground: #f8f6f2;
+      --momenceColorBackground: #f7f4ef;
       --momenceColorPrimary: 156, 116, 91;
       --momenceColorBlack: 43, 43, 43;
     }
@@ -34,269 +31,317 @@
     html, body {
       margin: 0;
       padding: 0;
-      background: var(--bg);
-      color: var(--text);
+      background: var(--pearl-ash);
+      color: var(--charcoal-ink);
       font-family: "Inter", sans-serif;
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .page {
+    body {
       min-height: 100vh;
     }
 
-    .hero {
-      position: relative;
-      min-height: 68vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 80px 24px 220px;
-      background:
-        linear-gradient(rgba(225, 224, 218, 0.48), rgba(225, 224, 218, 0.72)),
-        url("./hero.jpg") center center / cover no-repeat;
+    .page {
+      width: 100%;
+      padding: 32px 20px 72px;
     }
 
-    .hero-inner {
-      max-width: 900px;
+    .container {
+      max-width: 1200px;
       margin: 0 auto;
     }
 
+    .hero {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      min-height: 72vh;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #f7f4ef;
+      box-shadow: 0 20px 50px rgba(43, 43, 43, 0.06);
+    }
+
+    .hero-copy {
+      padding: 48px 48px 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #f7f4ef;
+    }
+
     .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(248, 246, 242, 0.72);
-      backdrop-filter: blur(6px);
       font-size: 12px;
-      letter-spacing: 0.14em;
+      line-height: 1;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
+      color: rgba(43, 43, 43, 0.72);
+      margin-bottom: 24px;
     }
 
     h1 {
       margin: 0;
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(3rem, 7vw, 5.8rem);
-      line-height: 0.94;
-      letter-spacing: -0.02em;
+      font-family: "Epilogue", sans-serif;
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
       font-weight: 600;
+      max-width: 760px;
     }
 
-    .subtitle {
-      max-width: 680px;
-      margin: 22px auto 0;
-      font-size: clamp(1rem, 2vw, 1.2rem);
+    .hero-text {
+      margin-top: 28px;
+      max-width: 640px;
+      font-size: 1.15rem;
       line-height: 1.75;
-      color: rgba(43, 43, 43, 0.88);
+      color: rgba(43, 43, 43, 0.84);
     }
 
-    .form-wrap {
+    .hero-meta {
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .meta-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(216, 197, 172, 0.28);
+      color: rgba(43, 43, 43, 0.78);
+      font-size: 0.92rem;
+    }
+
+    .hero-image {
+      min-height: 420px;
+      background:
+        linear-gradient(rgba(225, 224, 218, 0.08), rgba(225, 224, 218, 0.18)),
+        url("./hero.jpg") center center / cover no-repeat;
+      background-color: var(--desert-sand);
+    }
+
+    .form-section {
+      margin-top: -84px;
       position: relative;
-      max-width: 920px;
-      margin: -140px auto 0;
-      padding: 0 24px 90px;
       z-index: 2;
+      padding: 0 24px;
     }
 
     .form-card {
-      background: rgba(248, 246, 242, 0.92);
-      backdrop-filter: blur(12px);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 34px 28px 30px;
-      border: 1px solid rgba(87, 57, 35, 0.07);
+      max-width: 760px;
+      margin: 0 auto;
+      background: rgba(247, 244, 239, 0.96);
+      border: 1px solid rgba(87, 57, 35, 0.08);
+      border-radius: 24px;
+      padding: 30px 26px 24px;
+      box-shadow: 0 18px 40px rgba(43, 43, 43, 0.08);
+      backdrop-filter: blur(8px);
     }
 
-    .card-top {
+    .form-heading {
       text-align: center;
-      margin-bottom: 26px;
+      margin-bottom: 22px;
     }
 
-    .card-title {
+    .form-heading h2 {
       margin: 0;
-      font-family: "Cormorant Garamond", serif;
-      font-size: clamp(2rem, 4vw, 2.9rem);
+      font-family: "Epilogue", sans-serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
       line-height: 1;
+      letter-spacing: -0.03em;
       font-weight: 600;
     }
 
-    .card-text {
-      max-width: 580px;
+    .form-heading p {
       margin: 12px auto 0;
-      font-size: 0.98rem;
+      max-width: 560px;
+      font-size: 1rem;
       line-height: 1.7;
-      color: rgba(43, 43, 43, 0.8);
-    }
-
-    .benefits {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px 14px;
-      margin: 18px 0 0;
-      padding: 0;
-      list-style: none;
-      font-size: 0.92rem;
-      color: rgba(43, 43, 43, 0.78);
-    }
-
-    .benefits li {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(216, 197, 172, 0.32);
+      color: rgba(43, 43, 43, 0.76);
     }
 
     #momence-plugin-lead-form {
-      max-width: 640px;
+      max-width: 600px;
       margin: 0 auto;
     }
 
-    footer {
+    .footer {
+      margin-top: 44px;
       text-align: center;
-      padding: 0 24px 44px;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       color: rgba(43, 43, 43, 0.72);
     }
 
-    .footer-link {
-      color: var(--primary);
+    .footer a {
+      color: var(--clay-stone);
       font-weight: 600;
-      transition: color 0.25s ease;
+      text-decoration: none;
+      transition: color 0.22s ease;
     }
 
-    .footer-link:hover {
+    .footer a:hover {
       color: var(--walnut);
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 980px) {
       .hero {
-        min-height: 60vh;
-        padding: 64px 20px 170px;
-        background-position: center top;
+        grid-template-columns: 1fr;
       }
 
-      .form-wrap {
-        margin-top: -110px;
-        padding: 0 18px 70px;
+      .hero-copy {
+        padding: 34px 26px 28px;
+      }
+
+      .hero-image {
+        min-height: 340px;
+      }
+
+      .form-section {
+        margin-top: 24px;
+        padding: 0;
       }
 
       .form-card {
-        padding: 26px 18px 22px;
-        border-radius: 18px;
+        border-radius: 20px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 18px 14px 56px;
       }
 
-      .benefits {
-        gap: 8px;
+      .hero {
+        border-radius: 22px;
       }
 
-      .benefits li {
-        font-size: 0.84rem;
+      .hero-copy {
+        padding: 28px 20px 24px;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+      }
+
+      .form-card {
+        padding: 22px 16px 18px;
       }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="eyebrow">Opening soon in Forest, Brussels</div>
-        <h1>A sanctuary of movement is coming to Brussels</h1>
-        <p class="subtitle">
-          Camōh House is a sanctuary of movement dedicated to women’s body cycles and conscious movement.
-        </p>
-      </div>
-    </section>
+    <div class="container">
+      <section class="hero">
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">Opening soon in Forest, Brussels</div>
+            <h1>A sanctuary of movement is coming to Brussels</h1>
+            <p class="hero-text">
+              Camōh House is a sanctuary of movement dedicated to women’s body cycles and conscious movement.
+            </p>
+          </div>
 
-    <section class="form-wrap">
-      <div class="form-card">
-        <div class="card-top">
-          <h2 class="card-title">Join the waitlist</h2>
-          <p class="card-text">
-            Be the first to hear about opening updates, early access and first class releases.
-          </p>
-          <ul class="benefits">
-            <li>Early access</li>
-            <li>Opening news</li>
-            <li>First class releases</li>
-          </ul>
+          <div class="hero-meta">
+            <span class="meta-pill">Waitlist now open</span>
+            <span class="meta-pill">Early access</span>
+            <span class="meta-pill">First class releases</span>
+          </div>
         </div>
 
-        <div id="momence-plugin-lead-form"></div>
+        <div class="hero-image"></div>
+      </section>
 
-        <script
-          async
-          type="module"
-          id="momence-plugin-lead-form-src"
-          host_id="221420"
-          fields="firstName,email"
-          token="JxjQRV1J7V"
-          country_code="be"
-          source_id="178540"
-          data_collect_consent="required"
-          data-redirect-after-submit-to="https://camoh.house/thank-you.html"
-          data-on-success-msg="You’re on the list. We’ll let you know as soon as Camōh opens its doors."
-          data-field-def='{"firstName":{"type":"text","label":"First name","required":true},"email":{"type":"email","label":"Email","required":true}}'
-          src="https://momence.com/plugin/lead-form/lead-form.js"
-        ></script>
+      <section class="form-section">
+        <div class="form-card">
+          <div class="form-heading">
+            <h2>Join the waitlist</h2>
+            <p>Be the first to hear about opening updates, early access and first class releases.</p>
+          </div>
+
+          <div id="momence-plugin-lead-form"></div>
+
+          <script
+            async
+            type="module"
+            id="momence-plugin-lead-form-src"
+            host_id="221420"
+            fields="firstName,email"
+            token="JxjQRV1J7V"
+            country_code="be"
+            source_id="178540"
+            data_collect_consent="required"
+            data-redirect-after-submit-to="https://camoh.house/thank-you.html"
+            data-on-success-msg="You’re on the list. We’ll let you know as soon as Camōh opens its doors."
+            data-field-def='{"firstName":{"type":"text","label":"First name","required":true},"email":{"type":"email","label":"Email","required":true}}'
+            src="https://momence.com/plugin/lead-form/lead-form.js"
+          ></script>
+        </div>
+      </section>
+
+      <div class="footer">
+        Follow the journey on
+        <a href="https://www.instagram.com/camoh.house/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
-    </section>
-
-    <footer>
-      Follow the journey on
-      <a class="footer-link" href="https://www.instagram.com/camoh.house/" target="_blank" rel="noopener noreferrer">
-        Instagram
-      </a>
-    </footer>
+    </div>
   </div>
 
   <script>
-    function updateMomenceUI() {
-      const submitButton = document.querySelector('#momence-plugin-lead-form button[type="submit"]');
+    function styleMomenceForm() {
+      const formRoot = document.querySelector('#momence-plugin-lead-form');
+      if (!formRoot) return;
+
+      const submitButton = formRoot.querySelector('button[type="submit"]');
       if (submitButton) {
         submitButton.textContent = 'Join the waitlist';
+        submitButton.style.background = '#9c745b';
+        submitButton.style.color = '#f7f4ef';
+        submitButton.style.border = 'none';
+        submitButton.style.borderRadius = '999px';
+        submitButton.style.padding = '14px 22px';
+        submitButton.style.fontFamily = '"Inter", sans-serif';
+        submitButton.style.fontSize = '15px';
+        submitButton.style.fontWeight = '600';
+        submitButton.style.cursor = 'pointer';
+        submitButton.style.transition = 'all 0.22s ease';
+        submitButton.style.boxShadow = '0 8px 18px rgba(87, 57, 35, 0.12)';
       }
 
-      const labels = document.querySelectorAll('#momence-plugin-lead-form label');
+      const labels = formRoot.querySelectorAll('label');
       labels.forEach(label => {
         label.style.fontFamily = '"Inter", sans-serif';
         label.style.fontSize = '14px';
         label.style.fontWeight = '500';
-        label.style.color = 'rgba(43,43,43,0.88)';
+        label.style.color = 'rgba(43,43,43,0.86)';
       });
 
-      const inputs = document.querySelectorAll('#momence-plugin-lead-form input');
+      const inputs = formRoot.querySelectorAll('input:not([type="checkbox"])');
       inputs.forEach(input => {
-        input.style.borderRadius = '14px';
+        input.style.width = '100%';
         input.style.border = '1px solid rgba(87,57,35,0.12)';
+        input.style.borderRadius = '14px';
+        input.style.background = '#ffffff';
         input.style.padding = '16px 18px';
-        input.style.background = '#fff';
+        input.style.fontFamily = '"Inter", sans-serif';
         input.style.fontSize = '16px';
+        input.style.color = '#2b2b2b';
         input.style.boxShadow = 'none';
       });
 
-      const checkbox = document.querySelector('#momence-plugin-lead-form input[type="checkbox"]');
+      const checkbox = formRoot.querySelector('input[type="checkbox"]');
       if (checkbox) {
         checkbox.style.accentColor = '#9c745b';
       }
 
-      if (submitButton) {
-        submitButton.style.background = '#9c745b';
-        submitButton.style.color = '#f8f6f2';
-        submitButton.style.border = 'none';
-        submitButton.style.borderRadius = '999px';
-        submitButton.style.padding = '14px 22px';
-        submitButton.style.fontSize = '15px';
-        submitButton.style.fontWeight = '600';
-        submitButton.style.cursor = 'pointer';
-        submitButton.style.transition = 'all 0.25s ease';
-        submitButton.style.boxShadow = '0 8px 18px rgba(87,57,35,0.12)';
+      const consentText = formRoot.querySelector('label[for], .consent, p');
+      if (consentText) {
+        consentText.style.lineHeight = '1.6';
+      }
+
+      if (submitButton && !submitButton.dataset.hoverBound) {
+        submitButton.dataset.hoverBound = 'true';
 
         submitButton.addEventListener('mouseenter', () => {
           submitButton.style.background = '#573923';
@@ -310,12 +355,16 @@
       }
     }
 
-    const observer = new MutationObserver(() => {
-      updateMomenceUI();
-    });
+    let tries = 0;
+    const interval = setInterval(() => {
+      styleMomenceForm();
+      tries += 1;
 
-    observer.observe(document.body, { childList: true, subtree: true });
-    window.addEventListener('load', updateMomenceUI);
+      const formExists = document.querySelector('#momence-plugin-lead-form input');
+      if (formExists || tries > 40) {
+        clearInterval(interval);
+      }
+    }, 500);
   </script>
 </body>
 </html>
