@@ -66,7 +66,7 @@
       padding: 48px 48px 42px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       background: #f7f4ef;
     }
 
@@ -82,7 +82,7 @@
     h1 {
       margin: 0;
       font-family: "Epilogue", sans-serif;
-      font-size: clamp(3rem, 7vw, 6rem);
+      font-size: clamp(2.6rem, 6vw, 5.2rem);
       line-height: 0.95;
       letter-spacing: -0.04em;
       font-weight: 600;
@@ -91,27 +91,10 @@
 
     .hero-text {
       margin-top: 28px;
-      max-width: 640px;
-      font-size: 1.15rem;
+      max-width: 620px;
+      font-size: 1.12rem;
       line-height: 1.75;
       color: rgba(43, 43, 43, 0.84);
-    }
-
-    .hero-meta {
-      margin-top: 36px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .meta-pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: rgba(216, 197, 172, 0.28);
-      color: rgba(43, 43, 43, 0.78);
-      font-size: 0.92rem;
     }
 
     .hero-image {
@@ -123,7 +106,7 @@
     }
 
     .form-section {
-      margin-top: -84px;
+      margin-top: -64px;
       position: relative;
       z-index: 2;
       padding: 0 24px;
@@ -156,7 +139,7 @@
 
     .form-heading p {
       margin: 12px auto 0;
-      max-width: 560px;
+      max-width: 520px;
       font-size: 1rem;
       line-height: 1.7;
       color: rgba(43, 43, 43, 0.76);
@@ -243,12 +226,6 @@
               Camōh House is a sanctuary of movement dedicated to women’s body cycles and conscious movement.
             </p>
           </div>
-
-          <div class="hero-meta">
-            <span class="meta-pill">Waitlist now open</span>
-            <span class="meta-pill">Early access</span>
-            <span class="meta-pill">First class releases</span>
-          </div>
         </div>
 
         <div class="hero-image"></div>
@@ -258,7 +235,7 @@
         <div class="form-card">
           <div class="form-heading">
             <h2>Join the waitlist</h2>
-            <p>Be the first to hear about opening updates, early access and first class releases.</p>
+            <p>Be the first to hear about opening updates and early access.</p>
           </div>
 
           <div id="momence-plugin-lead-form"></div>
@@ -333,11 +310,6 @@
       const checkbox = formRoot.querySelector('input[type="checkbox"]');
       if (checkbox) {
         checkbox.style.accentColor = '#9c745b';
-      }
-
-      const consentText = formRoot.querySelector('label[for], .consent, p');
-      if (consentText) {
-        consentText.style.lineHeight = '1.6';
       }
 
       if (submitButton && !submitButton.dataset.hoverBound) {
