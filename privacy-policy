@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | CAMŌH House</title>
+  <meta name="description" content="Privacy Policy of CAMŌH House." />
+  <style>
+    :root {
+      --charcoal-ink: #2b2b2b;
+      --pearl-ash: #e1e0da;
+      --desert-sand: #d8c5ac;
+      --clay-stone: #9c745b;
+      --terracotta-clay: #944f37;
+      --walnut: #573923;
+      --pine-forest: #2a3421;
+      --olive-grove: #505e37;
+      --max-width: 860px;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(43, 43, 43, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behaviour: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background: var(--pearl-ash);
+      colour: var(--charcoal-ink);
+      line-height: 1.65;
+    }
+
+    a { colour: var(--pine-forest); }
+
+    .page { min-height: 100vh; padding: 48px 20px 80px; }
+    .container { max-width: var(--max-width); margin: 0 auto; }
+
+    .hero {
+      background: linear-gradient(180deg, var(--pearl-ash) 0%, #d7d6d0 100%);
+      border: 1px solid rgba(43, 43, 43, 0.08);
+      border-radius: 24px;
+      padding: 44px 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      colour: var(--clay-stone);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.05;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    .intro { max-width: 680px; font-size: 16px; margin: 0; }
+
+    .card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(43, 43, 43, 0.06);
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .meta-box {
+      background: rgba(216, 197, 172, 0.18);
+      border-radius: 14px;
+      padding: 16px 18px;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      colour: var(--clay-stone);
+      margin-bottom: 6px;
+    }
+
+    .meta-value { font-size: 15px; }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 34px 0 14px;
+      line-height: 1.2;
+    }
+
+    p, li { font-size: 15px; }
+    ul { padding-left: 20px; margin: 10px 0 0; }
+
+    .footer {
+      max-width: var(--max-width);
+      margin: 24px auto 0;
+      padding: 0 8px;
+      font-size: 13px;
+      colour: var(--clay-stone);
+    }
+
+    @media (max-width: 640px) {
+      .page { padding-top: 24px; }
+      .hero, .card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <section class="hero">
+        <div class="brand">CAMŌH House</div>
+        <h1>Privacy Policy</h1>
+        <p class="intro">
+          This Privacy Policy explains how CAMŌH House collects, uses, stores and protects personal data relating to its clients,
+          prospects and website visitors.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="meta">
+          <div class="meta-box">
+            <span class="meta-label">Version</span>
+            <span class="meta-value">Version 1.0</span>
+          </div>
+          <div class="meta-box">
+            <span class="meta-label">Effective date</span>
+            <span class="meta-value">5 April 2026</span>
+          </div>
+          <div class="meta-box">
+            <span class="meta-label">Data controller</span>
+            <span class="meta-value">CAMŌH House – CAMOH SRL – company number [to be added]</span>
+          </div>
+        </div>
+
+        <h2>1. Who is responsible for processing your data?</h2>
+        <p>
+          The data controller is CAMOH SRL, operating CAMŌH House, with its registered office at 26, Boulevard de la Deuxième Armée Britannique, 1190 Forest, Belgium,
+          registered under company number [to be added], contactable at: <a href="mailto:hello@camoh.be">hello@camoh.be</a>.
+        </p>
+
+        <h2>2. What data do we collect?</h2>
+        <p>We may collect the following categories of personal data:</p>
+        <ul>
+          <li>identification data: name, email address, telephone number;</li>
+          <li>account data: login details, booking history, subscriptions, packs and payments;</li>
+          <li>communication data: correspondence with the studio, requests sent via forms or email;</li>
+          <li>participation data: class attendance, waitlists, cancellations, booking preferences;</li>
+          <li>technical data: IP address, browser, cookies or browsing data when you visit our website.</li>
+        </ul>
+
+        <h2>3. Why do we use your data?</h2>
+        <p>We use your personal data for the following purposes:</p>
+        <ul>
+          <li>to create and manage your account;</li>
+          <li>to process your bookings, subscriptions, packs, purchases and payments;</li>
+          <li>to send transactional emails relating to your bookings or purchases;</li>
+          <li>to respond to your enquiries and provide customer support;</li>
+          <li>to send, where permitted, information, updates or launch communications;</li>
+          <li>to improve our services, website and the experience offered by CAMŌH House;</li>
+          <li>to comply with legal, accounting and administrative obligations.</li>
+        </ul>
+
+        <h2>4. What is the legal basis for processing?</h2>
+        <p>Depending on the context, processing is based on:</p>
+        <ul>
+          <li>the performance of a contract or pre-contractual measures;</li>
+          <li>your consent, where required;</li>
+          <li>compliance with legal obligations;</li>
+          <li>our legitimate interests, including service improvement, security and client relationship management.</li>
+        </ul>
+
+        <h2>5. Who do we share your data with?</h2>
+        <p>
+          Your data may be shared, where necessary, with our technical and operational service providers, such as booking platforms,
+          payment processors, emailing tools, hosting providers or analytics services used by CAMŌH House.
+        </p>
+        <p>
+          At the time of publication, these include solutions such as Momence, as well as payment providers, web hosting services and email creation or delivery tools. Where relevant, personal data may also be processed in connection with operations carried out at our operating site located at 342, Chaussée d'Alsemberg, 1190 Forest, Belgium.
+        </p>
+
+        <h2>6. How long do we retain your data?</h2>
+        <p>
+          We retain personal data only for as long as necessary for the purposes for which it was collected, subject to applicable
+          legal retention requirements, including accounting and administrative obligations.
+        </p>
+
+        <h2>7. Your rights</h2>
+        <p>You have the following rights, subject to applicable law:</p>
+        <ul>
+          <li>right of access;</li>
+          <li>right to rectification;</li>
+          <li>right to erasure, where applicable;</li>
+          <li>right to restriction of processing;</li>
+          <li>right to object;</li>
+          <li>right to data portability, where applicable;</li>
+          <li>right to withdraw consent at any time where processing is based on consent.</li>
+        </ul>
+        <p>
+          To exercise your rights, please contact us at: <a href="mailto:hello@camoh.be">hello@camoh.be</a>.
+        </p>
+
+        <h2>8. Marketing emails and unsubscribe</h2>
+        <p>
+          If you receive marketing communications from CAMŌH House, you may unsubscribe at any time by clicking the unsubscribe link
+          included in the relevant emails.
+        </p>
+
+        <h2>9. Cookies and browsing data</h2>
+        <p>
+          When you visit our website, cookies or similar technologies may be used to ensure proper functioning, measure audience
+          and improve your experience. A separate cookie policy may be provided where necessary.
+        </p>
+
+        <h2>10. Security</h2>
+        <p>
+          CAMŌH House implements appropriate technical and organisational measures to protect personal data against loss,
+          unauthorised access, alteration or disclosure.
+        </p>
+
+        <h2>11. Complaints</h2>
+        <p>
+          If you consider that the processing of your personal data does not comply with applicable regulations, you have the right to lodge a complaint with the competent data protection authority. In Belgium, this is the Autorité de protection des données (APD) / Gegevensbeschermingsautoriteit (GBA), Rue de la Presse 35, 1000 Brussels, Belgium. Website: www.autoriteprotectiondonnees.be.
+        </p>
+
+        <h2>12. Changes</h2>
+        <p>
+          CAMŌH House may update this Privacy Policy at any time. The most recent version will be published on this page with its
+          effective date.
+        </p>
+
+        <h2>13. Contact</h2>
+        <p>
+          For any questions regarding this Privacy Policy or the processing of your data, please contact us at:
+          <a href="mailto:hello@camoh.be">hello@camoh.be</a>.
+        </p>
+      </section>
+    </div>
+
+    <div class="footer">
+      CAMŌH House · a sanctuary of movement
+    </div>
+  </main>
+</body>
+</html>
